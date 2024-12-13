@@ -2,6 +2,7 @@ package io.github.marcoant07.msclientes.application;
 
 import io.github.marcoant07.msclientes.application.representation.ClienteSavaRequest;
 import io.github.marcoant07.msclientes.domain.Cliente;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("clientes")
+@Slf4j
 public class ClientesResource {
 
     @Autowired
@@ -37,5 +39,10 @@ public class ClientesResource {
         }
 
         return ResponseEntity.ok(cliente);
+    }
+
+    @GetMapping
+    public String status(){
+        return "ok";
     }
 }

@@ -1,12 +1,13 @@
 package io.github.marcoant07.msclientes.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Entity
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Entity
 public class Cliente {
 
     @Id
