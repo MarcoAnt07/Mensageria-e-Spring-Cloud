@@ -10,12 +10,17 @@ import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class CartoesPorClienteResponse {
 
     private String nome;
     private String bandeira;
     private BigDecimal limiteLiberado;
+
+    public CartoesPorClienteResponse(String nome, String bandeira, BigDecimal limiteLiberado) {
+        this.nome = nome;
+        this.bandeira = bandeira;
+        this.limiteLiberado = limiteLiberado;
+    }
 
     public static CartoesPorClienteResponse fromModel(ClienteCartao model){
         return new CartoesPorClienteResponse(
