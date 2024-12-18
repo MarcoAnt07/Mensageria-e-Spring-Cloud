@@ -3,9 +3,11 @@ package io.gtihub.marcoant07.application;
 import feign.FeignException;
 import io.gtihub.marcoant07.application.ex.DadosClienteNotFoundException;
 import io.gtihub.marcoant07.application.ex.ErroComunicacaoMicroservicesException;
+import io.gtihub.marcoant07.application.ex.ErroSolicitacaoCartaoException;
 import io.gtihub.marcoant07.domain.model.*;
 import io.gtihub.marcoant07.infra.clients.CartoesResouceClient;
 import io.gtihub.marcoant07.infra.clients.ClienteResourceClient;
+import io.gtihub.marcoant07.infra.mqueue.SolicitacaoEmissaoCartaoPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +16,8 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -25,6 +29,9 @@ public class AvaliadorCreditoService {
 
     @Autowired
     private CartoesResouceClient cartoesResouceClient;
+
+    @Autowired
+    private SolicitacaoEmissaoCartaoPublisher publisher;
 
 
     public SituacaoCliente obterSituacaoCliente(String cpf) throws DadosClienteNotFoundException, ErroComunicacaoMicroservicesException{
@@ -86,6 +93,18 @@ public class AvaliadorCreditoService {
             }
 
             throw new ErroComunicacaoMicroservicesException(e.getMessage(), status);
+        }
+    }
+
+    public ProtocoloSolicitacaoCartao solicitacaoEmissaoCartao(DadosSolicitacaoEmissaoCartao dados){
+        try{
+            publisher.solicitarCartao(dados);
+
+            var protocolo = UUID.randomUUID().toString();
+
+            return new ProtocoloSolicitacaoCartao(protocolo);
+        } catch (Exception e) {
+            throw new ErroSolicitacaoCartaoException(e.getMessage());
         }
     }
 }
