@@ -37,15 +37,18 @@ public class AvaliadorCreditoService {
     public SituacaoCliente obterSituacaoCliente(String cpf) throws DadosClienteNotFoundException, ErroComunicacaoMicroservicesException{
 
         try{
+            // Obtenção de dados do cliente
             ResponseEntity<DadosCliente> dadosClienteResponse = clienteResourceClient.dadosCliente(cpf);
 
+            // Obtenção da lista de cartões do cliente
             ResponseEntity<List<CartaoCliente>> cartoesResponse = cartoesResouceClient.getCartoesByCliente(cpf);
 
-            return SituacaoCliente
-                    .builder()
-                    .cliente(dadosClienteResponse.getBody())
-                    .cartoes(cartoesResponse.getBody())
-                    .build();
+            // Instanciação direta de SituacaoCliente sem o builder
+            SituacaoCliente situacaoCliente = new SituacaoCliente();
+            situacaoCliente.setCliente(dadosClienteResponse.getBody());
+            situacaoCliente.setCartoes(cartoesResponse.getBody());
+
+            return situacaoCliente;
         } catch (FeignException.FeignClientException e){
             int status = e.status();
             if(HttpStatus.NOT_FOUND.value() == status){

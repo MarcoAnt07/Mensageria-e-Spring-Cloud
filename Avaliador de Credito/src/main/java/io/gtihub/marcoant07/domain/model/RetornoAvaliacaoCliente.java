@@ -10,6 +10,9 @@ import java.util.List;
 public class RetornoAvaliacaoCliente {
     private List<CartaoAprovado> cartoes;
 
+    public RetornoAvaliacaoCliente(List<CartaoAprovado> listaCartoesAprovados) {
+    }
+
     public List<CartaoAprovado> getCartoes() {
         return cartoes;
     }

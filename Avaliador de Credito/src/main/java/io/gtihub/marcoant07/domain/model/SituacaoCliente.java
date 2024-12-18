@@ -16,6 +16,22 @@ public class SituacaoCliente {
     private DadosCliente cliente;
     private List<CartaoCliente> cartoes;
 
+    public SituacaoCliente() {
+    }
+
+    public SituacaoCliente(DadosCliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public SituacaoCliente(List<CartaoCliente> cartoes) {
+        this.cartoes = cartoes;
+    }
+
+    public SituacaoCliente(DadosCliente cliente, List<CartaoCliente> cartoes) {
+        this.cliente = cliente;
+        this.cartoes = cartoes;
+    }
+
     public DadosCliente getCliente() {
         return cliente;
     }
