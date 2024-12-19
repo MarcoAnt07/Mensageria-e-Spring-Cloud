@@ -3,6 +3,8 @@ package io.github.marcoant07.msclientes.application;
 import io.github.marcoant07.msclientes.application.representation.ClienteSavaRequest;
 import io.github.marcoant07.msclientes.domain.Cliente;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +17,8 @@ import java.net.URI;
 @Slf4j
 public class ClientesResource {
 
+    private static final Logger log = LoggerFactory.getLogger(ClientesResource.class);
+
     @Autowired
     private ClienteService service;
 
@@ -23,9 +27,9 @@ public class ClientesResource {
         Cliente cliente = request.toModel();
 
         URI headerLocation = ServletUriComponentsBuilder
-                .fromCurrentRequest()  // A URL atual de onde a requisição foi feita
-                .query("cpf={cpf}")    // Incluindo o CPF como query param
-                .buildAndExpand(cliente.getCpf())  // Expande o CPF na URL
+                .fromCurrentRequest()
+                .query("cpf={cpf}")
+                .buildAndExpand(cliente.getCpf())
                 .toUri();
 
         return ResponseEntity.created(headerLocation).build();

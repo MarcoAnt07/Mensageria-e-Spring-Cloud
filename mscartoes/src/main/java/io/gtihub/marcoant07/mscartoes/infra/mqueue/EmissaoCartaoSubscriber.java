@@ -8,6 +8,7 @@ import io.gtihub.marcoant07.mscartoes.domain.DadosSolicitacaoEmissaoCartao;
 import io.gtihub.marcoant07.mscartoes.infra.repository.CartaoRepository;
 import io.gtihub.marcoant07.mscartoes.infra.repository.ClienteCartaoRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
+@Slf4j
 public class EmissaoCartaoSubscriber {
 
     @Autowired
@@ -39,7 +41,7 @@ public class EmissaoCartaoSubscriber {
 
             clienteCartaoRepository.save(clienteCartao);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            log.error("Erro ao receber solicitação de emissão de cartão: {}", e.getMessage());
         }
 
     }
