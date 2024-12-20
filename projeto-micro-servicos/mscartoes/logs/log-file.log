@@ -1,0 +1,148 @@
+2024-12-20T17:33:55.995-03:00  INFO 31212 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Starting MscartoesApplicationTests using Java 17.0.10 with PID 31212 (started by pc in C:\Users\pc\Desktop\Compass\Mensageria e Spring Cloud\projeto-micro-servicos\mscartoes)
+2024-12-20T17:33:55.995-03:00  INFO 31212 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : The following 1 profile is active: "local"
+2024-12-20T17:33:57.135-03:00  INFO 31212 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T17:33:57.321-03:00  INFO 31212 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 2 JPA repository interfaces.
+2024-12-20T17:33:57.628-03:00  INFO 31212 --- [mscartoes] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324eb9f3-f09a-34aa-b4a0-4e141bc9e6df
+2024-12-20T17:33:58.234-03:00  INFO 31212 --- [mscartoes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T17:33:58.331-03:00  INFO 31212 --- [mscartoes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T17:33:58.381-03:00  INFO 31212 --- [mscartoes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T17:33:58.803-03:00  INFO 31212 --- [mscartoes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T17:33:58.851-03:00  INFO 31212 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T17:33:59.043-03:00  INFO 31212 --- [mscartoes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2024-12-20T17:33:59.044-03:00  INFO 31212 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T17:33:59.111-03:00  INFO 31212 --- [mscartoes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T17:34:00.000-03:00  INFO 31212 --- [mscartoes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T17:34:00.071-03:00  INFO 31212 --- [mscartoes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:34:00.736-03:00  WARN 31212 --- [mscartoes] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-20T17:34:02.246-03:00  INFO 31212 --- [mscartoes] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-12-20T17:34:02.337-03:00  WARN 31212 --- [mscartoes] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-12-20T17:34:02.349-03:00  INFO 31212 --- [mscartoes] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-20T17:34:02.472-03:00  INFO 31212 --- [mscartoes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:34:02.503-03:00  INFO 31212 --- [mscartoes] [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2024-12-20T17:34:02.520-03:00  INFO 31212 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:34:02.565-03:00  INFO 31212 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Started MscartoesApplicationTests in 7.032 seconds (process running for 8.193)
+2024-12-20T17:34:03.149-03:00  INFO 31212 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-12-20T17:34:03.151-03:00  INFO 31212 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARTOES with eureka with status DOWN
+2024-12-20T17:34:03.158-03:00  INFO 31212 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2024-12-20T17:34:03.158-03:00  INFO 31212 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2024-12-20T17:34:03.164-03:00  INFO 31212 --- [mscartoes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:34:03.167-03:00  INFO 31212 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T17:34:03.173-03:00  INFO 31212 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T17:39:34.267-03:00  INFO 32104 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Starting MscartoesApplicationTests using Java 17.0.10 with PID 32104 (started by pc in C:\Users\pc\Desktop\Compass\Mensageria e Spring Cloud\projeto-micro-servicos\mscartoes)
+2024-12-20T17:39:34.269-03:00  INFO 32104 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : The following 1 profile is active: "local"
+2024-12-20T17:39:35.315-03:00  INFO 32104 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T17:39:35.475-03:00  INFO 32104 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 2 JPA repository interfaces.
+2024-12-20T17:39:35.728-03:00  INFO 32104 --- [mscartoes] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324eb9f3-f09a-34aa-b4a0-4e141bc9e6df
+2024-12-20T17:39:36.252-03:00  INFO 32104 --- [mscartoes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T17:39:36.329-03:00  INFO 32104 --- [mscartoes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T17:39:36.372-03:00  INFO 32104 --- [mscartoes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T17:39:36.725-03:00  INFO 32104 --- [mscartoes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T17:39:36.764-03:00  INFO 32104 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T17:39:36.937-03:00  INFO 32104 --- [mscartoes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2024-12-20T17:39:36.939-03:00  INFO 32104 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T17:39:36.994-03:00  INFO 32104 --- [mscartoes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T17:39:37.736-03:00  INFO 32104 --- [mscartoes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T17:39:37.797-03:00  INFO 32104 --- [mscartoes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:39:38.395-03:00  WARN 32104 --- [mscartoes] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-20T17:39:39.752-03:00  INFO 32104 --- [mscartoes] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-12-20T17:39:39.816-03:00  WARN 32104 --- [mscartoes] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-12-20T17:39:39.827-03:00  INFO 32104 --- [mscartoes] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-20T17:39:39.934-03:00  INFO 32104 --- [mscartoes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:39:39.956-03:00  INFO 32104 --- [mscartoes] [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2024-12-20T17:39:39.964-03:00  INFO 32104 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:39:39.978-03:00  INFO 32104 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Started MscartoesApplicationTests in 6.181 seconds (process running for 7.258)
+2024-12-20T17:39:40.522-03:00  INFO 32104 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-12-20T17:39:40.524-03:00  INFO 32104 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARTOES with eureka with status DOWN
+2024-12-20T17:39:40.527-03:00  INFO 32104 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2024-12-20T17:39:40.527-03:00  INFO 32104 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2024-12-20T17:39:40.533-03:00  INFO 32104 --- [mscartoes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:39:40.535-03:00  INFO 32104 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T17:39:40.538-03:00  INFO 32104 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T17:41:34.175-03:00  INFO 27140 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Starting MscartoesApplicationTests using Java 17.0.10 with PID 27140 (started by pc in C:\Users\pc\Desktop\Compass\Mensageria e Spring Cloud\projeto-micro-servicos\mscartoes)
+2024-12-20T17:41:34.176-03:00  INFO 27140 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : The following 1 profile is active: "local"
+2024-12-20T17:41:35.223-03:00  INFO 27140 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T17:41:35.375-03:00  INFO 27140 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 2 JPA repository interfaces.
+2024-12-20T17:41:35.637-03:00  INFO 27140 --- [mscartoes] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324eb9f3-f09a-34aa-b4a0-4e141bc9e6df
+2024-12-20T17:41:36.145-03:00  INFO 27140 --- [mscartoes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T17:41:36.217-03:00  INFO 27140 --- [mscartoes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T17:41:36.262-03:00  INFO 27140 --- [mscartoes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T17:41:36.607-03:00  INFO 27140 --- [mscartoes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T17:41:36.640-03:00  INFO 27140 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T17:41:36.797-03:00  INFO 27140 --- [mscartoes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2024-12-20T17:41:36.799-03:00  INFO 27140 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T17:41:36.849-03:00  INFO 27140 --- [mscartoes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T17:41:37.587-03:00  INFO 27140 --- [mscartoes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T17:41:37.648-03:00  INFO 27140 --- [mscartoes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:41:38.229-03:00  WARN 27140 --- [mscartoes] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-20T17:41:39.580-03:00  INFO 27140 --- [mscartoes] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-12-20T17:41:39.658-03:00  WARN 27140 --- [mscartoes] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-12-20T17:41:39.670-03:00  INFO 27140 --- [mscartoes] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-20T17:41:39.774-03:00  INFO 27140 --- [mscartoes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:41:39.811-03:00  INFO 27140 --- [mscartoes] [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2024-12-20T17:41:39.821-03:00  INFO 27140 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:41:39.837-03:00  INFO 27140 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Started MscartoesApplicationTests in 6.123 seconds (process running for 7.203)
+2024-12-20T17:41:40.332-03:00  INFO 27140 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-12-20T17:41:40.334-03:00  INFO 27140 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARTOES with eureka with status DOWN
+2024-12-20T17:41:40.339-03:00  INFO 27140 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2024-12-20T17:41:40.339-03:00  INFO 27140 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2024-12-20T17:41:40.345-03:00  INFO 27140 --- [mscartoes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:41:40.348-03:00  INFO 27140 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T17:41:40.351-03:00  INFO 27140 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-20T17:43:31.933-03:00  INFO 17464 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Starting MscartoesApplicationTests using Java 17.0.10 with PID 17464 (started by pc in C:\Users\pc\Desktop\Compass\Mensageria e Spring Cloud\projeto-micro-servicos\mscartoes)
+2024-12-20T17:43:31.935-03:00  INFO 17464 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : The following 1 profile is active: "local"
+2024-12-20T17:43:32.963-03:00  INFO 17464 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-20T17:43:33.105-03:00  INFO 17464 --- [mscartoes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+2024-12-20T17:43:33.363-03:00  INFO 17464 --- [mscartoes] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=324eb9f3-f09a-34aa-b4a0-4e141bc9e6df
+2024-12-20T17:43:33.862-03:00  INFO 17464 --- [mscartoes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-20T17:43:33.933-03:00  INFO 17464 --- [mscartoes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-20T17:43:33.992-03:00  INFO 17464 --- [mscartoes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-20T17:43:34.342-03:00  INFO 17464 --- [mscartoes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-20T17:43:34.380-03:00  INFO 17464 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-20T17:43:34.536-03:00  INFO 17464 --- [mscartoes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2024-12-20T17:43:34.538-03:00  INFO 17464 --- [mscartoes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-20T17:43:34.588-03:00  INFO 17464 --- [mscartoes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-20T17:43:35.339-03:00  INFO 17464 --- [mscartoes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-20T17:43:35.399-03:00  INFO 17464 --- [mscartoes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:43:36.031-03:00  WARN 17464 --- [mscartoes] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-20T17:43:37.441-03:00  INFO 17464 --- [mscartoes] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-12-20T17:43:37.507-03:00  WARN 17464 --- [mscartoes] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-12-20T17:43:37.521-03:00  INFO 17464 --- [mscartoes] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-12-20T17:43:37.638-03:00  INFO 17464 --- [mscartoes] [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:43:37.650-03:00  INFO 17464 --- [mscartoes] [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+2024-12-20T17:43:37.660-03:00  INFO 17464 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2024-12-20T17:43:37.676-03:00  INFO 17464 --- [mscartoes] [main] i.g.m.m.MscartoesApplicationTests        : Started MscartoesApplicationTests in 6.204 seconds (process running for 7.273)
+2024-12-20T17:43:38.223-03:00  INFO 17464 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-12-20T17:43:38.225-03:00  INFO 17464 --- [mscartoes] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARTOES with eureka with status DOWN
+2024-12-20T17:43:38.229-03:00  INFO 17464 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2024-12-20T17:43:38.229-03:00  INFO 17464 --- [mscartoes] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2024-12-20T17:43:38.235-03:00  INFO 17464 --- [mscartoes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-20T17:43:38.239-03:00  INFO 17464 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-20T17:43:38.242-03:00  INFO 17464 --- [mscartoes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
