@@ -4,7 +4,6 @@ import io.gtihub.marcoant07.application.ex.DadosClienteNotFoundException;
 import io.gtihub.marcoant07.application.ex.ErroComunicacaoMicroservicesException;
 import io.gtihub.marcoant07.application.ex.ErroSolicitacaoCartaoException;
 import io.gtihub.marcoant07.domain.model.*;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("avaliacoes-credito")
-@RequiredArgsConstructor
 public class AvaliadorCreditoController {
 
     @Autowired

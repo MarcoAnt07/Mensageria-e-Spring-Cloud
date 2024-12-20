@@ -1,10 +1,7 @@
 package io.gtihub.marcoant07.domain.model;
 
-import lombok.Data;
-
 import java.math.BigDecimal;
 
-@Data
 public class DadosSolicitacaoEmissaoCartao {
 
     private Long idCartao;
@@ -41,6 +38,22 @@ public class DadosSolicitacaoEmissaoCartao {
     }
 
     public void setLimiteLiberado(BigDecimal limiteLiberado) {
+        this.limiteLiberado = limiteLiberado;
+    }
+
+    public DadosSolicitacaoEmissaoCartao() {
+    }
+
+    public DadosSolicitacaoEmissaoCartao(String cpf, String endereco, BigDecimal limiteLiberado) {
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.limiteLiberado = limiteLiberado;
+    }
+
+    public DadosSolicitacaoEmissaoCartao(Long idCartao, String cpf, String endereco, BigDecimal limiteLiberado) {
+        this.idCartao = idCartao;
+        this.cpf = cpf;
+        this.endereco = endereco;
         this.limiteLiberado = limiteLiberado;
     }
 }

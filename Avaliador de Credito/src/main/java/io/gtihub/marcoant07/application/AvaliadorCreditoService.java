@@ -8,7 +8,6 @@ import io.gtihub.marcoant07.domain.model.*;
 import io.gtihub.marcoant07.infra.clients.CartoesResouceClient;
 import io.gtihub.marcoant07.infra.clients.ClienteResourceClient;
 import io.gtihub.marcoant07.infra.mqueue.SolicitacaoEmissaoCartaoPublisher;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +20,6 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
-@RequiredArgsConstructor
 public class AvaliadorCreditoService {
 
     @Autowired
